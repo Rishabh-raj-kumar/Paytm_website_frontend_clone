@@ -417,6 +417,7 @@ header nav li a {
   flex-wrap: wrap;
 }
 .business--tools .business--tools_desc .business--cards {
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
