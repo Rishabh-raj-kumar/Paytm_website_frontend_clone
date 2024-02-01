@@ -147,7 +147,7 @@ header nav li a {
 
 .hero--info h1 {
   font-family: sans-serif;
-  font-size: clamp(3rem, 10vh, 8rem);
+  font-size: clamp(2rem, 8vh, 4rem);
 }
 
 .hero--info p {
@@ -200,7 +200,7 @@ header nav li a {
 }
 
 .download--btn {
-  width: max(330px, 5rem);
+  width: 330px;
   display: flex;
   background: var(--color-neon_black);
   padding: 1rem;
@@ -414,6 +414,7 @@ header nav li a {
 .business--tools .business--tools_desc .business--container {
   margin-block: 3rem;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .business--tools .business--tools_desc .business--cards {
   display: flex;
@@ -838,4 +839,78 @@ footer .icon--line {
 }
 .blog--posts .blog--card img {
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  header li {
+    display: none;
+  }
+  .hero--box {
+    flex-direction: column-reverse;
+  }
+  .hero--box .hero--info {
+    width: 100%;
+  }
+  .hero--box .hero--info h1 {
+    font-size: 35px;
+  }
+  .hero--box .hero--img {
+    width: 100%;
+  }
+  .download--btn {
+    max-width: 280px;
+    font-size: 16px;
+    padding: 0.8rem 0.8rem;
+  }
+  .instrument--card_box .hero--box {
+    padding: 0rem;
+  }
+  .instrument--card_box .hero--box h1 {
+    font-size: 30px;
+  }
+  .instrument--card_box .hero--box p {
+    font-size: 15px;
+  }
+  .instrument--card_box .download--btn {
+    max-width: 150px;
+    font-size: 14px;
+  }
+  .mega--box {
+    flex-direction: column;
+  }
+  .mega--box h1 {
+    font-size: 34px;
+  }
+  .mega--box p {
+    font-size: 15px;
+  }
+  .promo {
+    flex-direction: column-reverse;
+  }
+  .Promotion--container .promotion--box h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .Promotion--container .promotion--box .promotion--info {
+    width: 100%;
+    gap: 1rem;
+  }
+  .Promotion--container .promotion--box .promotion--info h1 {
+    text-align: left;
+  }
+  .Promotion--container .promotion--box .promotion--img {
+    width: 100%;
+  }
+  .business--tools_desc {
+    width: 100% h1;
+    width-font-size: 30px;
+  }
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer .footer--box {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
