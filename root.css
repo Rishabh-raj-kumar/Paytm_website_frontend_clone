@@ -1,0 +1,340 @@
+/* Loading all fonts...*/
+/* mono ui font family... */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Curvy Italic Font family... */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* Giant Bold font family.... */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*Hindi font family... */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+/* artist font family */
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+:root {
+
+    --font-Poppins: 'Poppins', sans-serif;
+    --font-OpenSans: 'Open Sans', sans-serif;
+    --font-SpaceMono: 'Space Mono', sans-serif;
+    --font-Playfair: 'Playfair Display', sans-serif;
+    --font-BabasNeue: 'Bebas Neue', sans-serif;
+    --font-Baloo: "Baloo 2", sans-serif;
+    --font-artist: "Rye", sans-serif;
+
+    --card-bg_BlueColor: #A0E9FF;
+    --card-bg_PinkColor: #F3D7CA;
+    --card-bg_YellowColor: #FDFFAB;
+    --card-bg_GreenColor: #C3E2C2;
+    --card-bg_FaceColor: #FAF0D7;
+
+    --card-text_DarkColor: #03001C;
+    --card-text_LightColor: #404258;
+
+    --text-xs: 14px;
+    --text-normal: 16px;
+    --text-big: 19px;
+    --text-giant: 22px;
+
+    --border-1: 1px solid;
+    --border-2: 2px solid;
+    --border-4: 4px solid;
+
+    --rounded-xs: 0.2rem;
+    --rounded-sm: 0.8rem;
+    --rounded-md: 1.6rem;
+    --rounded-lg: 2.4rem;
+    --rounded-full: 50%;
+
+    --color-light_green: #D4E7C5;
+    --color-light_pink: #F5EEE6;
+    --color-light_blue: #A0E9FF;
+    --color-light_purple: #C3ACD0;
+    --color-light_yellow: #FEFF86;
+    --color-light_gray: #FFF0F5;
+    --color-light_violet: #8EA7E9;
+
+    --color-neon_blue: #1D2B53;
+    --color-neon_red: #FF004D;
+    --color-neon_purple: #49108B;
+    --color-neon_yellow: #F8DE22;
+    --color-neon_teal: #0B666A;
+    --color-neon_black: #000000;
+    --color-neon_pink: #E90064;
+    --color-neon_green: #16FF00;
+
+    --color-vintage_lightGray: #424769;
+    --color-vintage_lightWhite: #C7C8CC;
+    --color-vintage_lightBlack: #181D31;
+
+    --color-original_blue: #00A9FF;
+
+
+    --box-shadow_light: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    --box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+    --box-shadow_mid:  rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --box-shadow_lg: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    --box-shadow_xl: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    --box-shadow_inner: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.width-100{
+    width: 100%;
+}
+/* Margin*/
+.mx-10 {
+    margin-inline: 10px;
+}
+
+.mx-20 {
+    margin-inline: 20px;
+}
+
+.mx-30 {
+    margin-inline: 30px;
+}
+
+.mx-40 {
+    margin-inline: 40px;
+}
+
+.my-10 {
+    margin-block: 10px;
+}
+
+.my-20 {
+    margin-block: 20px;
+}
+
+.my-30 {
+    margin-block: 30px;
+}
+
+.my-40 {
+    margin-block: 40px;
+}
+
+/* Padding */
+.px-10 {
+    padding-inline: 10px;
+}
+
+.px-20 {
+    padding-inline: 20px;
+}
+
+.px-30 {
+    padding-inline: 30px;
+}
+
+.px-40 {
+    padding-inline: 40px;
+}
+
+.py-10 {
+    padding-block: 10px;
+}
+
+.py-20 {
+    padding-block: 20px;
+}
+
+.py-30 {
+    padding-block: 30px;
+}
+
+.py-40 {
+    padding-block: 40px;
+}
+
+
+/* Flexbox */
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.justify-space{
+    justify-content: space-between;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+/* GridBox */
+.grid {
+    display: grid;
+}
+
+.place-center {
+    place-items: center;
+}
+
+.grid-responsive-template {
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.grid-rep-3{
+    justify-content: space-between;
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* letter-spacing */
+.letter-space-2 {
+    letter-spacing: 2px;
+}
+
+.letter-space-5 {
+    letter-spacing: 5px;
+}
+
+.letter-space-10 {
+    letter-spacing: 10px;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+input,
+textarea {
+    border: 1px solid gray;
+    outline: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-family: var(--font-OpenSans);
+    position: relative;
+    transition: 0.8s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.8s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.original-button {
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    background: var(--color-neon_black);
+    color: white;
+    border-radius: var(--rounded-xs);
+    box-shadow: var(--box-shadow_light);
+}
+
+.button-danger {
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    background: var(--color-neon_red);
+    color: white;
+    border-radius: var(--rounded-xs);
+    box-shadow: var(--box-shadow);
+}
+
+.button-danger:hover {
+    box-shadow: 5px 5px var(--card-bg_PinkColor);
+    animation: pulse-border-red 800ms cubic-bezier(0.165, 0.84, 0.44, 1) 1;
+}
+
+.button-best {
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    background: var(--color-neon_green);
+    color: white;
+    border-radius: var(--rounded-xs);
+    box-shadow: var(--box-shadow_light);
+}
+
+.button-best:hover {
+    box-shadow: 5px 5px var(--card-bg_GreenColor);
+    animation: pulse-border-green 800ms cubic-bezier(0.165, 0.84, 0.44, 1) 1;
+}
+
+.button-info {
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    background: var(--color-original_blue);
+    color: white;
+    border-radius: var(--rounded-xs);
+    box-shadow: var(--box-shadow_light);
+}
+
+.button-info:hover {
+    box-shadow: 5px 5px var(--card-bg_BlueColor);
+    animation: pulse-border-blue 800ms cubic-bezier(0.165, 0.84, 0.44, 1) 1;
+}
+
+@keyframes pulse-border-blue {
+    10% {
+        outline: 2px solid var(--color-light_blue);
+        outline-offset: 1px;
+    }
+
+    50% {
+        outline: 2px solid var(--color-light_blue);
+        outline-offset: 3px;
+    }
+
+    to {
+        outline: none;
+    }
+}
+@keyframes pulse-border-green {
+    10% {
+        outline: 2px solid var(--color-light_green);
+        outline-offset: 1px;
+    }
+    50% {
+        outline: 2px solid var(--card-bg_GreenColor);
+        outline-offset: 3px;
+    }
+
+    to {
+        outline: none;
+    }
+}
+@keyframes pulse-border-red {
+    10% {
+        outline: 2px solid var(--card-bg_PinkColor);
+        outline-offset: 1px;
+    }
+
+    50% {
+        outline: 2px solid var(--card-bg_PinkColor);
+        outline-offset: 3px;
+    }
+
+    to {
+        outline: none;
+    }
+}
